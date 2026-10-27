@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#111820">
+  <title>OSMANLI SULTANAT 3D</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <div id="game"></div>
+
+  <header id="hud">
+    <div class="brand">☾ OSMANLI <span>SULTANAT</span></div>
+    <div class="subtitle">RISE OF AN EMPIRE</div>
+
+    <div class="status">
+      <div class="health-line">
+        <span>HEALTH</span>
+        <div class="health-track"><div id="healthFill"></div></div>
+        <b id="health">100</b>
+      </div>
+      <div class="score-line">⚔ <span id="score">0</span> / 6 GUARDS</div>
+    </div>
+    <div id="message">Explore the imperial courtyard</div>
+  </header>
+
+  <div id="crosshair">✦</div>
+  <div id="loading">PREPARING THE EMPIRE...</div>
+
+  <div id="controls">
+    <div class="movement">
+      <button class="control up" data-key="up">▲</button>
+      <button class="control left" data-key="left">◀</button>
+      <button class="control down" data-key="down">▼</button>
+      <button class="control right" data-key="right">▶</button>
+    </div>
+    <div class="combat">
+      <button class="control jump" data-action="jump">JUMP</button>
+      <button class="control attack" data-action="attack">⚔ ATTACK</button>
+    </div>
+  </div>
+
+  <div id="desktopHint">WASD / ARROWS · SPACE TO JUMP · J TO ATTACK</div>
+  <div id="error" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
